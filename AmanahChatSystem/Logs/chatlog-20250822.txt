@@ -1,0 +1,166 @@
+2025-08-22 00:24:53.559 +03:00 [INF] Executed endpoint '/chatHub'
+2025-08-22 00:24:53.703 +03:00 [INF] HTTP CONNECT /chathub responded 200 in 1611636.8698 ms
+2025-08-22 00:24:53.703 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7003/chathub?id=vCKvgt1c1BQN65AeCJJINw&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - 200 null null 1611637.4296ms
+2025-08-22 00:24:53.712 +03:00 [INF] Connection id "0HNEVR93B3H6K", Request id "0HNEVR93B3H6K:00000003": the application completed without reading the entire request body.
+2025-08-22 00:24:53.938 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null null
+2025-08-22 00:24:53.938 +03:00 [INF] CORS policy execution successful.
+2025-08-22 00:24:53.938 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 204 null null 0.2303ms
+2025-08-22 00:24:53.949 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null 0
+2025-08-22 00:24:53.949 +03:00 [INF] CORS policy execution successful.
+2025-08-22 00:24:53.949 +03:00 [INF] Executing endpoint '/chatHub/negotiate'
+2025-08-22 00:24:53.949 +03:00 [INF] Executed endpoint '/chatHub/negotiate'
+2025-08-22 00:24:53.949 +03:00 [INF] HTTP POST /chathub/negotiate responded 200 in 0.5167 ms
+2025-08-22 00:24:53.949 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 200 316 application/json 0.8162ms
+2025-08-22 00:24:54.174 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7003/chathub?id=u8KaqJ16vXeFNjG3mbM8tA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - null null
+2025-08-22 00:24:54.174 +03:00 [INF] CORS policy execution successful.
+2025-08-22 00:24:54.174 +03:00 [INF] Executing endpoint '/chatHub'
+2025-08-22 00:24:58.519 +03:00 [INF] Executed endpoint '/chatHub'
+2025-08-22 00:24:58.519 +03:00 [INF] HTTP CONNECT /chathub responded 200 in 4345.3445 ms
+2025-08-22 00:24:58.520 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7003/chathub?id=u8KaqJ16vXeFNjG3mbM8tA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - 200 null null 4345.7521ms
+2025-08-22 00:24:58.520 +03:00 [INF] Connection id "0HNEVR93B3H6M", Request id "0HNEVR93B3H6M:00000003": the application completed without reading the entire request body.
+2025-08-22 05:14:02.293 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null null
+2025-08-22 05:14:02.293 +03:00 [INF] CORS policy execution successful.
+2025-08-22 05:14:02.293 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 204 null null 0.1953ms
+2025-08-22 05:14:02.306 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null 0
+2025-08-22 05:14:02.306 +03:00 [INF] CORS policy execution successful.
+2025-08-22 05:14:02.307 +03:00 [INF] Executing endpoint '/chatHub/negotiate'
+2025-08-22 05:14:02.307 +03:00 [INF] Executed endpoint '/chatHub/negotiate'
+2025-08-22 05:14:02.307 +03:00 [INF] HTTP POST /chathub/negotiate responded 200 in 0.6419 ms
+2025-08-22 05:14:02.307 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 200 316 application/json 0.9173ms
+2025-08-22 05:14:03.202 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7003/chathub?id=Y8JwXEvX7A-fz4Y_-r8Tyw&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - null null
+2025-08-22 05:14:03.202 +03:00 [INF] CORS policy execution successful.
+2025-08-22 05:14:03.203 +03:00 [INF] Executing endpoint '/chatHub'
+2025-08-22 06:33:53.009 +03:00 [INF] Executed endpoint '/chatHub'
+2025-08-22 06:33:53.029 +03:00 [INF] HTTP CONNECT /chathub responded 200 in 4789808.3199 ms
+2025-08-22 06:33:53.030 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7003/chathub?id=Y8JwXEvX7A-fz4Y_-r8Tyw&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - 200 null null 4789828.2349ms
+2025-08-22 06:33:53.047 +03:00 [INF] Connection id "0HNEVR93B3H6O", Request id "0HNEVR93B3H6O:00000003": the application completed without reading the entire request body.
+2025-08-22 06:33:53.912 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null null
+2025-08-22 06:33:53.913 +03:00 [INF] CORS policy execution successful.
+2025-08-22 06:33:53.913 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 204 null null 1.2359ms
+2025-08-22 06:33:53.922 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null 0
+2025-08-22 06:33:53.925 +03:00 [INF] CORS policy execution successful.
+2025-08-22 06:33:53.930 +03:00 [INF] Executing endpoint '/chatHub/negotiate'
+2025-08-22 06:33:53.931 +03:00 [INF] Executed endpoint '/chatHub/negotiate'
+2025-08-22 06:33:53.932 +03:00 [INF] HTTP POST /chathub/negotiate responded 200 in 5.8497 ms
+2025-08-22 06:33:53.932 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 200 316 application/json 9.6937ms
+2025-08-22 06:33:54.172 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7003/chathub?id=_VVdccwZ7rkMJHDiCkc4GQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - null null
+2025-08-22 06:33:54.172 +03:00 [INF] CORS policy execution successful.
+2025-08-22 06:33:54.173 +03:00 [INF] Executing endpoint '/chatHub'
+2025-08-22 11:33:48.564 +03:00 [INF] Executed endpoint '/chatHub'
+2025-08-22 11:33:48.564 +03:00 [INF] HTTP CONNECT /chathub responded 200 in 17994391.7637 ms
+2025-08-22 11:33:48.564 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7003/chathub?id=_VVdccwZ7rkMJHDiCkc4GQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - 200 null null 17994392.1233ms
+2025-08-22 11:33:48.564 +03:00 [INF] Connection id "0HNEVR93B3H6Q", Request id "0HNEVR93B3H6Q:00000003": the application completed without reading the entire request body.
+2025-08-22 16:09:19.172 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null null
+2025-08-22 16:09:19.172 +03:00 [INF] CORS policy execution successful.
+2025-08-22 16:09:19.172 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 204 null null 0.2532ms
+2025-08-22 16:09:19.194 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null 0
+2025-08-22 16:09:19.195 +03:00 [INF] CORS policy execution successful.
+2025-08-22 16:09:19.195 +03:00 [INF] Executing endpoint '/chatHub/negotiate'
+2025-08-22 16:09:19.199 +03:00 [INF] Executed endpoint '/chatHub/negotiate'
+2025-08-22 16:09:19.199 +03:00 [INF] HTTP POST /chathub/negotiate responded 200 in 4.0453 ms
+2025-08-22 16:09:19.199 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 200 316 application/json 4.4737ms
+2025-08-22 16:09:23.234 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7003/chathub?id=LIc4Uda-JFmmSdRuJlsOAA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - null null
+2025-08-22 16:09:23.234 +03:00 [INF] CORS policy execution successful.
+2025-08-22 16:09:23.235 +03:00 [INF] Executing endpoint '/chatHub'
+2025-08-22 17:59:24.669 +03:00 [INF] Executed endpoint '/chatHub'
+2025-08-22 17:59:24.669 +03:00 [INF] HTTP CONNECT /chathub responded 200 in 6601434.4141 ms
+2025-08-22 17:59:24.669 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7003/chathub?id=LIc4Uda-JFmmSdRuJlsOAA&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - 200 null null 6601435.1062ms
+2025-08-22 17:59:24.671 +03:00 [INF] Connection id "0HNEVR93B3H6S", Request id "0HNEVR93B3H6S:00000003": the application completed without reading the entire request body.
+2025-08-22 17:59:25.880 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null null
+2025-08-22 17:59:25.880 +03:00 [INF] CORS policy execution successful.
+2025-08-22 17:59:25.881 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 204 null null 1.0254ms
+2025-08-22 17:59:25.891 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null 0
+2025-08-22 17:59:25.891 +03:00 [INF] CORS policy execution successful.
+2025-08-22 17:59:25.891 +03:00 [INF] Executing endpoint '/chatHub/negotiate'
+2025-08-22 17:59:25.892 +03:00 [INF] Executed endpoint '/chatHub/negotiate'
+2025-08-22 17:59:25.892 +03:00 [INF] HTTP POST /chathub/negotiate responded 200 in 1.5648 ms
+2025-08-22 17:59:25.893 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 200 316 application/json 1.939ms
+2025-08-22 17:59:25.952 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7003/chathub?id=1ZDUV1aeY--msNasWwk3cg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - null null
+2025-08-22 17:59:25.952 +03:00 [INF] CORS policy execution successful.
+2025-08-22 17:59:25.953 +03:00 [INF] Executing endpoint '/chatHub'
+2025-08-22 19:31:31.124 +03:00 [INF] Executed endpoint '/chatHub'
+2025-08-22 19:31:31.124 +03:00 [INF] HTTP CONNECT /chathub responded 200 in 5525171.3489 ms
+2025-08-22 19:31:31.124 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7003/chathub?id=1ZDUV1aeY--msNasWwk3cg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - 200 null null 5525171.8607ms
+2025-08-22 19:31:31.124 +03:00 [INF] Connection id "0HNEVR93B3H6U", Request id "0HNEVR93B3H6U:00000003": the application completed without reading the entire request body.
+2025-08-22 19:31:33.215 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null null
+2025-08-22 19:31:33.216 +03:00 [INF] CORS policy execution successful.
+2025-08-22 19:31:33.216 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 204 null null 0.5856ms
+2025-08-22 19:31:33.226 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null 0
+2025-08-22 19:31:33.226 +03:00 [INF] CORS policy execution successful.
+2025-08-22 19:31:33.226 +03:00 [INF] Executing endpoint '/chatHub/negotiate'
+2025-08-22 19:31:33.228 +03:00 [INF] Executed endpoint '/chatHub/negotiate'
+2025-08-22 19:31:33.228 +03:00 [INF] HTTP POST /chathub/negotiate responded 200 in 1.7431 ms
+2025-08-22 19:31:33.228 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 200 316 application/json 2.0277ms
+2025-08-22 19:31:33.505 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7003/chathub?id=BI2ubn62sBmbXGYHZZqxBw&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - null null
+2025-08-22 19:31:33.505 +03:00 [INF] CORS policy execution successful.
+2025-08-22 19:31:33.505 +03:00 [INF] Executing endpoint '/chatHub'
+2025-08-22 20:14:22.350 +03:00 [INF] Executed endpoint '/chatHub'
+2025-08-22 20:14:22.350 +03:00 [INF] HTTP CONNECT /chathub responded 200 in 2568844.9657 ms
+2025-08-22 20:14:22.350 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7003/chathub?id=BI2ubn62sBmbXGYHZZqxBw&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - 200 null null 2568845.2435ms
+2025-08-22 20:14:22.350 +03:00 [INF] Connection id "0HNEVR93B3H70", Request id "0HNEVR93B3H70:00000003": the application completed without reading the entire request body.
+2025-08-22 20:14:23.538 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null null
+2025-08-22 20:14:23.538 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:14:23.539 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 204 null null 0.3661ms
+2025-08-22 20:14:23.569 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null 0
+2025-08-22 20:14:23.570 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:14:23.570 +03:00 [INF] Executing endpoint '/chatHub/negotiate'
+2025-08-22 20:14:23.570 +03:00 [INF] Executed endpoint '/chatHub/negotiate'
+2025-08-22 20:14:23.570 +03:00 [INF] HTTP POST /chathub/negotiate responded 200 in 0.6386 ms
+2025-08-22 20:14:23.570 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 200 316 application/json 0.973ms
+2025-08-22 20:14:23.600 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7003/chathub?id=mjTLhoBvjih_smFlApdpCQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - null null
+2025-08-22 20:14:23.600 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:14:23.601 +03:00 [INF] Executing endpoint '/chatHub'
+2025-08-22 20:15:01.356 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/api/Workspaces - null null
+2025-08-22 20:15:01.356 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-08-22 20:15:01.356 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/api/Users - null null
+2025-08-22 20:15:01.357 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:15:01.357 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:15:01.357 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/api/Workspaces - 204 null null 0.9378ms
+2025-08-22 20:15:01.357 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/api/Users - 204 null null 0.9381ms
+2025-08-22 20:15:01.358 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:15:01.358 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 204 null null 2.2971ms
+2025-08-22 20:15:01.378 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/Workspaces - application/json null
+2025-08-22 20:15:01.378 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:15:01.380 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - application/json null
+2025-08-22 20:15:01.380 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/Users - application/json null
+2025-08-22 20:15:01.380 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:15:01.380 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:15:01.382 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-08-22 20:15:01.382 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.WorkspacesController.GetWorkspaces (ChatSystem.UI)'
+2025-08-22 20:15:01.384 +03:00 [INF] HTTP GET /api/Users responded 404 in 1.3078 ms
+2025-08-22 20:15:01.384 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/Users - 404 0 null 4.2588ms
+2025-08-22 20:15:01.387 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-08-22 20:15:01.387 +03:00 [INF] Route matched with {action = "GetWorkspaces", controller = "Workspaces"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetWorkspaces(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.WorkspacesController (ChatSystem.UI).
+2025-08-22 20:15:01.389 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7003/api/Users, Response status code: 404
+2025-08-22 20:15:01.430 +03:00 [ERR] An error occurred using the connection to database 'AmanahChatDB' on server 'YZN\SQLEXPRESS'.
+2025-08-22 20:15:01.440 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.Collections.Generic.List`1[[Application.Queries.ChatRooms.GetChatRoomDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-22 20:15:01.442 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [w].[Id], [w].[ActionBy], [w].[Email], [w].[IsDeleted], [w].[LastActionDate], [w].[Metadata], [w].[Name]
+FROM [Workspaces] AS [w]
+WHERE [w].[IsDeleted] = CAST(0 AS bit)
+2025-08-22 20:15:01.443 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 55.5234ms
+2025-08-22 20:15:01.444 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-08-22 20:15:01.444 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 400 in 63.6809 ms
+2025-08-22 20:15:01.444 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 499 null application/json; charset=utf-8 64.2792ms
+2025-08-22 20:15:01.447 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.Collections.Generic.List`1[[Application.Queries.Workspaces.GetWorkspaceDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-22 20:15:01.448 +03:00 [INF] Executed action ChatSystem.UI.Controllers.WorkspacesController.GetWorkspaces (ChatSystem.UI) in 60.4073ms
+2025-08-22 20:15:01.448 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.WorkspacesController.GetWorkspaces (ChatSystem.UI)'
+2025-08-22 20:15:01.448 +03:00 [INF] HTTP GET /api/Workspaces responded 200 in 67.6855 ms
+2025-08-22 20:15:01.448 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/Workspaces - 499 null application/json; charset=utf-8 70.3839ms
+2025-08-22 20:15:26.418 +03:00 [INF] Application is shutting down...
+2025-08-22 20:15:26.449 +03:00 [INF] Executed endpoint '/chatHub'
+2025-08-22 20:15:26.449 +03:00 [INF] HTTP CONNECT /chathub responded 200 in 62848.6350 ms
+2025-08-22 20:15:26.449 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7003/chathub?id=mjTLhoBvjih_smFlApdpCQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - 200 null null 62849.0088ms
+2025-08-22 20:15:26.450 +03:00 [INF] Connection id "0HNEVR93B3H72", Request id "0HNEVR93B3H72:00000003": the application completed without reading the entire request body.
+2025-08-22 20:15:26.460 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null null
+2025-08-22 20:15:26.460 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:15:26.460 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 204 null null 0.3015ms
+2025-08-22 20:15:26.463 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null 0
+2025-08-22 20:15:26.464 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:15:26.464 +03:00 [INF] Executing endpoint '/chatHub/negotiate'
+2025-08-22 20:15:26.464 +03:00 [INF] Executed endpoint '/chatHub/negotiate'
+2025-08-22 20:15:26.464 +03:00 [INF] HTTP POST /chathub/negotiate responded 200 in 0.6846 ms
+2025-08-22 20:15:26.464 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 200 316 application/json 1.0989ms
+2025-08-22 20:15:26.473 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7003/chathub?id=0Us9Itc3W6tjHNgEYr-3tg&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWEyODA5OC03YjgxLTQ1ZjEtODZkMi02ZTM1ZjljYjc0OTQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGFyaXEiLCJXb3Jrc3BhY2VJZCI6ImQzYjMzM2I5LTg5NjMtNGYyNS05OTBhLWNjOGM1NmY1ZmQ5NiIsImV4cCI6MTc1NjI5MzcwMiwiaXNzIjoiQW1hbmFoQ2hhdCIsImF1ZCI6IkFtYW5haENoYXRBbmd1bGFyIn0.PU68PAfd5pSxOcMSquVtSG2Yp_pJ0p0C2Y-8mUYHs9o - null null
+2025-08-22 20:15:26.473 +03:00 [INF] CORS policy execution successful.
+2025-08-22 20:15:26.473 +03:00 [INF] Executing endpoint '/chatHub'

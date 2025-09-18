@@ -1,0 +1,4 @@
+C:\Users\hp\Downloads\AmanahChatSystem_Updated\Domain\bin\Release\net8.0\publish\Domain.dll
+C:\Users\hp\Downloads\AmanahChatSystem_Updated\Domain\bin\Release\net8.0\publish\Domain.deps.json
+C:\Users\hp\Downloads\AmanahChatSystem_Updated\Domain\bin\Release\net8.0\publish\Domain.pdb
+C:\Users\hp\Downloads\AmanahChatSystem_Updated\Domain\bin\Release\net8.0\publish\Newtonsoft.Json.dll

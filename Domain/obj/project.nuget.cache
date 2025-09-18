@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tHaDPd17rF0gw7YI8bJbo5MPSYIUUAnIDOzfbT9aNUNPDesY3QlE9eQm0lQP9WyTO7noAADTeStaMQYLUQhfoQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

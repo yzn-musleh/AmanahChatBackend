@@ -1,0 +1,306 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D535A7-3B0C-49E9-BAD8-F93009D48ECA}|AmanahChatSystem\\ChatSystem.UI.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\amanahchatsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D535A7-3B0C-49E9-BAD8-F93009D48ECA}|AmanahChatSystem\\ChatSystem.UI.csproj|solutionrelative:amanahchatsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D535A7-3B0C-49E9-BAD8-F93009D48ECA}|AmanahChatSystem\\ChatSystem.UI.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\amanahchatsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B8D535A7-3B0C-49E9-BAD8-F93009D48ECA}|AmanahChatSystem\\ChatSystem.UI.csproj|solutionrelative:amanahchatsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98EE1CAB-9560-4265-BDE6-28C4AD7B5055}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\infrastructure\\entityframework\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98EE1CAB-9560-4265-BDE6-28C4AD7B5055}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\entityframework\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\application\\queries\\users\\getusersbyworkspace\\getusersbyworkspacehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|solutionrelative:application\\queries\\users\\getusersbyworkspace\\getusersbyworkspacehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\application\\commands\\chatrooms\\adddirectchat\\adddirectchatrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|solutionrelative:application\\commands\\chatrooms\\adddirectchat\\adddirectchatrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\application\\commands\\users\\adduser\\adduserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|solutionrelative:application\\commands\\users\\adduser\\adduserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\application\\queries\\chatrooms\\getchatroombyuser\\getchatroombyuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|solutionrelative:application\\queries\\chatrooms\\getchatroombyuser\\getchatroombyuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\application\\queries\\users\\getusersbychatroom\\getusersbychatroomquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|solutionrelative:application\\queries\\users\\getusersbychatroom\\getusersbychatroomquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D535A7-3B0C-49E9-BAD8-F93009D48ECA}|AmanahChatSystem\\ChatSystem.UI.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\amanahchatsystem\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8D535A7-3B0C-49E9-BAD8-F93009D48ECA}|AmanahChatSystem\\ChatSystem.UI.csproj|solutionrelative:amanahchatsystem\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\application\\queries\\users\\getusersbychatroom\\getusersbychatroomhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|solutionrelative:application\\queries\\users\\getusersbychatroom\\getusersbychatroomhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8D535A7-3B0C-49E9-BAD8-F93009D48ECA}|AmanahChatSystem\\ChatSystem.UI.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\amanahchatsystem\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B8D535A7-3B0C-49E9-BAD8-F93009D48ECA}|AmanahChatSystem\\ChatSystem.UI.csproj|solutionrelative:amanahchatsystem\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\application\\commands\\chatrooms\\addroommember\\addroommembersrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|solutionrelative:application\\commands\\chatrooms\\addroommember\\addroommembersrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\application\\common\\interfaces\\iusercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|solutionrelative:application\\common\\interfaces\\iusercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\application\\commands\\workspaces\\addworkspace\\addworkspacerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|solutionrelative:application\\commands\\workspaces\\addworkspace\\addworkspacerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\application\\queries\\users\\getusersbyworkspace\\getusersbyworkspacequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|solutionrelative:application\\queries\\users\\getusersbyworkspace\\getusersbyworkspacequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|c:\\users\\hp\\downloads\\amanahchatsystem_updated\\application\\commands\\chatrooms\\addchatroom\\addchatroomrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0873F3-1CC8-4A67-8A64-25A9C5D9D6A2}|Application\\Application.csproj|solutionrelative:application\\commands\\chatrooms\\addchatroom\\addchatroomrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Infrastructure\\EntityFramework\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\EntityFramework\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Infrastructure\\EntityFramework\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\EntityFramework\\ApplicationDbContext.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAiwEQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T09:54:03.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddDirectChatRequestHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Commands\\ChatRooms\\AddDirectChat\\AddDirectChatRequestHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Commands\\ChatRooms\\AddDirectChat\\AddDirectChatRequestHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Commands\\ChatRooms\\AddDirectChat\\AddDirectChatRequestHandler.cs",
+              "RelativeToolTip": "Application\\Commands\\ChatRooms\\AddDirectChat\\AddDirectChatRequestHandler.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAcwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T11:14:54.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddUserHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Commands\\Users\\AddUser\\AddUserHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Commands\\Users\\AddUser\\AddUserHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Commands\\Users\\AddUser\\AddUserHandler.cs",
+              "RelativeToolTip": "Application\\Commands\\Users\\AddUser\\AddUserHandler.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAowB0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T11:08:16.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetChatRoomByUserHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Queries\\ChatRooms\\GetChatRoomByUser\\GetChatRoomByUserHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Queries\\ChatRooms\\GetChatRoomByUser\\GetChatRoomByUserHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Queries\\ChatRooms\\GetChatRoomByUser\\GetChatRoomByUserHandler.cs",
+              "RelativeToolTip": "Application\\Queries\\ChatRooms\\GetChatRoomByUser\\GetChatRoomByUserHandler.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAYwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T10:57:22.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "AmanahChatSystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\appsettings.json",
+              "RelativeToolTip": "AmanahChatSystem\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-19T20:04:38.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\Program.cs",
+              "RelativeDocumentMoniker": "AmanahChatSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\Program.cs",
+              "RelativeToolTip": "AmanahChatSystem\\Program.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAkwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T19:11:54.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "AmanahChatSystem\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "AmanahChatSystem\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBMwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T06:14:16.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddWorkspaceRequest.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Commands\\Workspaces\\AddWorkspace\\AddWorkspaceRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Commands\\Workspaces\\AddWorkspace\\AddWorkspaceRequest.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Commands\\Workspaces\\AddWorkspace\\AddWorkspaceRequest.cs",
+              "RelativeToolTip": "Application\\Commands\\Workspaces\\AddWorkspace\\AddWorkspaceRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T06:14:05.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetUsersByWorkspaceHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Queries\\Users\\GetUsersByWorkspace\\GetUsersByWorkspaceHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Queries\\Users\\GetUsersByWorkspace\\GetUsersByWorkspaceHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Queries\\Users\\GetUsersByWorkspace\\GetUsersByWorkspaceHandler.cs",
+              "RelativeToolTip": "Application\\Queries\\Users\\GetUsersByWorkspace\\GetUsersByWorkspaceHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T06:12:31.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetUsersByWorkspaceQuery.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Queries\\Users\\GetUsersByWorkspace\\GetUsersByWorkspaceQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Queries\\Users\\GetUsersByWorkspace\\GetUsersByWorkspaceQuery.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Queries\\Users\\GetUsersByWorkspace\\GetUsersByWorkspaceQuery.cs",
+              "RelativeToolTip": "Application\\Queries\\Users\\GetUsersByWorkspace\\GetUsersByWorkspaceQuery.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAhwA4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T06:12:02.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetUsersByChatRoomHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Queries\\Users\\GetUsersByChatRoom\\GetUsersByChatRoomHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Queries\\Users\\GetUsersByChatRoom\\GetUsersByChatRoomHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Queries\\Users\\GetUsersByChatRoom\\GetUsersByChatRoomHandler.cs",
+              "RelativeToolTip": "Application\\Queries\\Users\\GetUsersByChatRoom\\GetUsersByChatRoomHandler.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAkwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T06:08:38.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetUsersByChatRoomQuery.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Queries\\Users\\GetUsersByChatRoom\\GetUsersByChatRoomQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Queries\\Users\\GetUsersByChatRoom\\GetUsersByChatRoomQuery.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Queries\\Users\\GetUsersByChatRoom\\GetUsersByChatRoomQuery.cs",
+              "RelativeToolTip": "Application\\Queries\\Users\\GetUsersByChatRoom\\GetUsersByChatRoomQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T06:07:23.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddRoomMembersRequest.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Commands\\ChatRooms\\AddRoomMember\\AddRoomMembersRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Commands\\ChatRooms\\AddRoomMember\\AddRoomMembersRequest.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Commands\\ChatRooms\\AddRoomMember\\AddRoomMembersRequest.cs",
+              "RelativeToolTip": "Application\\Commands\\ChatRooms\\AddRoomMember\\AddRoomMembersRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T11:19:34.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IUserContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Common\\Interfaces\\IUserContext.cs",
+              "RelativeDocumentMoniker": "Application\\Common\\Interfaces\\IUserContext.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Common\\Interfaces\\IUserContext.cs",
+              "RelativeToolTip": "Application\\Common\\Interfaces\\IUserContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T13:08:59.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddChatRoomRequest.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Commands\\ChatRooms\\AddChatRoom\\AddChatRoomRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Commands\\ChatRooms\\AddChatRoom\\AddChatRoomRequest.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Commands\\ChatRooms\\AddChatRoom\\AddChatRoomRequest.cs",
+              "RelativeToolTip": "Application\\Commands\\ChatRooms\\AddChatRoom\\AddChatRoomRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T13:05:06.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "AmanahChatSystem\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\Properties\\launchSettings.json",
+              "RelativeToolTip": "AmanahChatSystem\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAxwBoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-19T07:50:59.285Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

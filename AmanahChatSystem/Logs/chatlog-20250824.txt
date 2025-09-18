@@ -1,0 +1,264 @@
+2025-08-24 16:01:27.248 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 16:01:27.544 +03:00 [INF] Now listening on: https://localhost:7003
+2025-08-24 16:01:27.544 +03:00 [INF] Now listening on: http://localhost:5277
+2025-08-24 16:01:27.548 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 16:01:27.549 +03:00 [INF] Hosting environment: Development
+2025-08-24 16:01:27.549 +03:00 [INF] Content root path: C:\Users\hp\Downloads\AmanahChatSystem_Updated\AmanahChatSystem
+2025-08-24 16:01:27.895 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/api/Users - null null
+2025-08-24 16:01:27.895 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-08-24 16:01:27.895 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/api/Workspaces - null null
+2025-08-24 16:01:27.955 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:27.955 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:27.955 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:27.961 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/api/Workspaces - 204 null null 69.9657ms
+2025-08-24 16:01:27.961 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/api/Users - 204 null null 70.0372ms
+2025-08-24 16:01:27.961 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 204 null null 69.9557ms
+2025-08-24 16:01:27.971 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/Users - application/json null
+2025-08-24 16:01:27.971 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/Workspaces - application/json null
+2025-08-24 16:01:27.971 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - application/json null
+2025-08-24 16:01:27.977 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:27.978 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:27.980 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:28.177 +03:00 [INF] HTTP GET /api/Users responded 404 in 172.4051 ms
+2025-08-24 16:01:28.180 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/Users - 404 0 null 209.6117ms
+2025-08-24 16:01:28.183 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.WorkspacesController.GetWorkspaces (ChatSystem.UI)'
+2025-08-24 16:01:28.183 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-08-24 16:01:28.183 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7003/api/Users, Response status code: 404
+2025-08-24 16:01:28.224 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-08-24 16:01:28.224 +03:00 [INF] Route matched with {action = "GetWorkspaces", controller = "Workspaces"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetWorkspaces(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.WorkspacesController (ChatSystem.UI).
+2025-08-24 16:01:29.714 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger - null null
+2025-08-24 16:01:29.914 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger - 301 0 null 199.7383ms
+2025-08-24 16:01:29.919 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-08-24 16:01:30.087 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 168.0277ms
+2025-08-24 16:01:30.117 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/swagger-ui.css - null null
+2025-08-24 16:01:30.126 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/swagger-ui-bundle.js - null null
+2025-08-24 16:01:30.138 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-24 16:01:30.139 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-08-24 16:01:30.139 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-24 16:01:30.144 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 5.6917ms
+2025-08-24 16:01:30.148 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-08-24 16:01:30.150 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/swagger-ui.css - 200 143943 text/css 33.1162ms
+2025-08-24 16:01:30.152 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-08-24 16:01:30.152 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 13.6625ms
+2025-08-24 16:01:30.169 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-08-24 16:01:30.169 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 42.8903ms
+2025-08-24 16:01:30.234 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.54ms
+2025-08-24 16:01:30.677 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-08-24 16:01:30.722 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/favicon-32x32.png - null null
+2025-08-24 16:01:30.723 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-08-24 16:01:30.723 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/favicon-32x32.png - 200 628 image/png 0.8548ms
+2025-08-24 16:01:30.879 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 201.2929ms
+2025-08-24 16:01:31.347 +03:00 [ERR] An error occurred using the connection to database 'AmanahChatDB' on server 'YZN\SQLEXPRESS'.
+2025-08-24 16:01:31.366 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.Collections.Generic.List`1[[Application.Queries.ChatRooms.GetChatRoomDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-24 16:01:31.429 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 3194.5989ms
+2025-08-24 16:01:31.430 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-08-24 16:01:31.430 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 400 in 3428.9712 ms
+2025-08-24 16:01:31.445 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 499 null application/json; charset=utf-8 3473.8401ms
+2025-08-24 16:01:31.462 +03:00 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [w].[Id], [w].[ActionBy], [w].[Email], [w].[IsDeleted], [w].[LastActionDate], [w].[Metadata], [w].[Name]
+FROM [Workspaces] AS [w]
+WHERE [w].[IsDeleted] = CAST(0 AS bit)
+2025-08-24 16:01:31.694 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.Collections.Generic.List`1[[Application.Queries.Workspaces.GetWorkspaceDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-24 16:01:31.726 +03:00 [INF] Executed action ChatSystem.UI.Controllers.WorkspacesController.GetWorkspaces (ChatSystem.UI) in 3500.5799ms
+2025-08-24 16:01:31.727 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.WorkspacesController.GetWorkspaces (ChatSystem.UI)'
+2025-08-24 16:01:31.728 +03:00 [INF] HTTP GET /api/Workspaces responded 200 in 3727.5073 ms
+2025-08-24 16:01:31.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/Workspaces - 499 null application/json; charset=utf-8 3757.9667ms
+2025-08-24 16:01:32.554 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null null
+2025-08-24 16:01:32.554 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - application/json null
+2025-08-24 16:01:32.555 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:32.555 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:32.555 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 204 null null 0.9826ms
+2025-08-24 16:01:32.566 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-08-24 16:01:32.566 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-08-24 16:01:32.572 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - null 0
+2025-08-24 16:01:32.572 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:32.584 +03:00 [INF] Executing endpoint '/chatHub/negotiate'
+2025-08-24 16:01:32.594 +03:00 [INF] Executed endpoint '/chatHub/negotiate'
+2025-08-24 16:01:32.594 +03:00 [INF] HTTP POST /chathub/negotiate responded 200 in 22.1068 ms
+2025-08-24 16:01:32.595 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/chathub/negotiate?negotiateVersion=1 - 200 316 application/json 22.7262ms
+2025-08-24 16:01:32.601 +03:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7003/chathub?id=eQFXy47KGHdzobeGgl3SZQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZDg4MDVkMS0zYjViLTRiOTktYjIyNi1lYzQ3MjkzYjI0ZDQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoieXpuIiwiV29ya3NwYWNlSWQiOiJkM2IzMzNiOS04OTYzLTRmMjUtOTkwYS1jYzhjNTZmNWZkOTYiLCJleHAiOjE3NTYyODc4NjksImlzcyI6IkFtYW5haENoYXQiLCJhdWQiOiJBbWFuYWhDaGF0QW5ndWxhciJ9.HF7PEBwKXFRHRWju5Z2rFY7w-MkmEMZawNOybzVIqng - null null
+2025-08-24 16:01:32.601 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:32.602 +03:00 [INF] Executing endpoint '/chatHub'
+2025-08-24 16:01:32.731 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@__request_UserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Id] = @__request_UserId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-08-24 16:01:33.005 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[@__request_UserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id] AS [RoomMemberId], [t].[Id] AS [ChatRoomId], CASE
+    WHEN [t].[Type] = 1 THEN (
+        SELECT TOP(1) [t0].[FirstName] + N' ' + COALESCE([t0].[LastName], N'')
+        FROM [RoomMembers] AS [r0]
+        INNER JOIN (
+            SELECT [u].[Id], [u].[ActionBy], [u].[ConnectId], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[IsDeleted], [u].[LastActionDate], [u].[LastName], [u].[Metadata], [u].[Password], [u].[ProfileImageUrl], [u].[Username], [u].[WorkspaceId]
+            FROM [Users] AS [u]
+            WHERE [u].[IsDeleted] = CAST(0 AS bit)
+        ) AS [t0] ON [r0].[UserId] = [t0].[Id]
+        WHERE [r0].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = [r0].[ChatRoomId] AND [r0].[UserId] <> @__request_UserId_0)
+    ELSE [t].[Title]
+END AS [Title], CASE
+    WHEN [t].[Type] = 2 THEN [t].[Description]
+    ELSE NULL
+END AS [Description], (
+    SELECT COUNT(*)
+    FROM [RoomMembers] AS [r1]
+    WHERE [r1].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = [r1].[ChatRoomId]) AS [TotalMembers], -1 AS [TotalMessages], [t].[LastActionDate], [r].[IsAdmin]
+FROM [RoomMembers] AS [r]
+INNER JOIN (
+    SELECT [c].[Id], [c].[Description], [c].[LastActionDate], [c].[Title], [c].[Type]
+    FROM [ChatRooms] AS [c]
+    WHERE [c].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [r].[ChatRoomId] = [t].[Id]
+WHERE [r].[IsDeleted] = CAST(0 AS bit) AND [r].[UserId] = @__request_UserId_0
+ORDER BY [t].[LastActionDate] DESC
+2025-08-24 16:01:33.008 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.Collections.Generic.List`1[[Application.Queries.ChatRooms.GetChatRoomDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-24 16:01:33.013 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 447.2437ms
+2025-08-24 16:01:33.014 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-08-24 16:01:33.014 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 200 in 458.7417 ms
+2025-08-24 16:01:33.014 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 200 null application/json; charset=utf-8 459.62ms
+2025-08-24 16:01:33.989 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-08-24 16:01:33.990 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:33.991 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 204 null null 1.8732ms
+2025-08-24 16:01:34.000 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/api/Users/GetUsersByWorkspace?workspaceId=d3b333b9-8963-4f25-990a-cc8c56f5fd96 - null null
+2025-08-24 16:01:34.001 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:34.001 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/api/Users/GetUsersByWorkspace?workspaceId=d3b333b9-8963-4f25-990a-cc8c56f5fd96 - 204 null null 0.5075ms
+2025-08-24 16:01:34.021 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - application/json null
+2025-08-24 16:01:34.021 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:34.022 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-08-24 16:01:34.022 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-08-24 16:01:34.033 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/Users/GetUsersByWorkspace?workspaceId=d3b333b9-8963-4f25-990a-cc8c56f5fd96 - application/json null
+2025-08-24 16:01:34.035 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:34.037 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.UsersController.GetUsersByWorkspace (ChatSystem.UI)'
+2025-08-24 16:01:34.040 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__request_UserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Id] = @__request_UserId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-08-24 16:01:34.048 +03:00 [INF] Route matched with {action = "GetUsersByWorkspace", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsersByWorkspace(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.UsersController (ChatSystem.UI).
+2025-08-24 16:01:34.081 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__request_WorkspaceId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Workspaces] AS [w]
+        WHERE [w].[IsDeleted] = CAST(0 AS bit) AND [w].[Id] = @__request_WorkspaceId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-08-24 16:01:34.097 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[@__request_UserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id] AS [RoomMemberId], [t].[Id] AS [ChatRoomId], CASE
+    WHEN [t].[Type] = 1 THEN (
+        SELECT TOP(1) [t0].[FirstName] + N' ' + COALESCE([t0].[LastName], N'')
+        FROM [RoomMembers] AS [r0]
+        INNER JOIN (
+            SELECT [u].[Id], [u].[ActionBy], [u].[ConnectId], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[IsDeleted], [u].[LastActionDate], [u].[LastName], [u].[Metadata], [u].[Password], [u].[ProfileImageUrl], [u].[Username], [u].[WorkspaceId]
+            FROM [Users] AS [u]
+            WHERE [u].[IsDeleted] = CAST(0 AS bit)
+        ) AS [t0] ON [r0].[UserId] = [t0].[Id]
+        WHERE [r0].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = [r0].[ChatRoomId] AND [r0].[UserId] <> @__request_UserId_0)
+    ELSE [t].[Title]
+END AS [Title], CASE
+    WHEN [t].[Type] = 2 THEN [t].[Description]
+    ELSE NULL
+END AS [Description], (
+    SELECT COUNT(*)
+    FROM [RoomMembers] AS [r1]
+    WHERE [r1].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = [r1].[ChatRoomId]) AS [TotalMembers], -1 AS [TotalMessages], [t].[LastActionDate], [r].[IsAdmin]
+FROM [RoomMembers] AS [r]
+INNER JOIN (
+    SELECT [c].[Id], [c].[Description], [c].[LastActionDate], [c].[Title], [c].[Type]
+    FROM [ChatRooms] AS [c]
+    WHERE [c].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [r].[ChatRoomId] = [t].[Id]
+WHERE [r].[IsDeleted] = CAST(0 AS bit) AND [r].[UserId] = @__request_UserId_0
+ORDER BY [t].[LastActionDate] DESC
+2025-08-24 16:01:34.098 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.Collections.Generic.List`1[[Application.Queries.ChatRooms.GetChatRoomDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-24 16:01:34.098 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 75.6216ms
+2025-08-24 16:01:34.098 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-08-24 16:01:34.098 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 200 in 77.0105 ms
+2025-08-24 16:01:34.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 200 null application/json; charset=utf-8 77.8341ms
+2025-08-24 16:01:34.126 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__request_WorkspaceId_0='?' (DbType = Guid), @__request_UserId_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[ActionBy], [u].[ConnectId], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[IsDeleted], [u].[LastActionDate], [u].[LastName], [u].[Metadata], [u].[Password], [u].[ProfileImageUrl], [u].[Username], [u].[WorkspaceId]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[WorkspaceId] = @__request_WorkspaceId_0 AND [u].[Id] <> @__request_UserId_1
+2025-08-24 16:01:34.197 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.Collections.Generic.List`1[[Application.Queries.Users.GetUserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-24 16:01:34.202 +03:00 [INF] Executed action ChatSystem.UI.Controllers.UsersController.GetUsersByWorkspace (ChatSystem.UI) in 153.6228ms
+2025-08-24 16:01:34.202 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.UsersController.GetUsersByWorkspace (ChatSystem.UI)'
+2025-08-24 16:01:34.202 +03:00 [INF] HTTP GET /api/Users/GetUsersByWorkspace responded 200 in 166.1225 ms
+2025-08-24 16:01:34.202 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/Users/GetUsersByWorkspace?workspaceId=d3b333b9-8963-4f25-990a-cc8c56f5fd96 - 200 null application/json; charset=utf-8 169.5446ms
+2025-08-24 16:01:35.439 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/Users/GetUsersByWorkspace?workspaceId=d3b333b9-8963-4f25-990a-cc8c56f5fd96 - application/json null
+2025-08-24 16:01:35.440 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:35.441 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.UsersController.GetUsersByWorkspace (ChatSystem.UI)'
+2025-08-24 16:01:35.441 +03:00 [INF] Route matched with {action = "GetUsersByWorkspace", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsersByWorkspace(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.UsersController (ChatSystem.UI).
+2025-08-24 16:01:35.453 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__request_WorkspaceId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Workspaces] AS [w]
+        WHERE [w].[IsDeleted] = CAST(0 AS bit) AND [w].[Id] = @__request_WorkspaceId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-08-24 16:01:35.462 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__request_WorkspaceId_0='?' (DbType = Guid), @__request_UserId_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[ActionBy], [u].[ConnectId], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[IsDeleted], [u].[LastActionDate], [u].[LastName], [u].[Metadata], [u].[Password], [u].[ProfileImageUrl], [u].[Username], [u].[WorkspaceId]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[WorkspaceId] = @__request_WorkspaceId_0 AND [u].[Id] <> @__request_UserId_1
+2025-08-24 16:01:35.464 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.Collections.Generic.List`1[[Application.Queries.Users.GetUserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-24 16:01:35.466 +03:00 [INF] Executed action ChatSystem.UI.Controllers.UsersController.GetUsersByWorkspace (ChatSystem.UI) in 24.3741ms
+2025-08-24 16:01:35.466 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.UsersController.GetUsersByWorkspace (ChatSystem.UI)'
+2025-08-24 16:01:35.466 +03:00 [INF] HTTP GET /api/Users/GetUsersByWorkspace responded 200 in 25.9427 ms
+2025-08-24 16:01:35.466 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/Users/GetUsersByWorkspace?workspaceId=d3b333b9-8963-4f25-990a-cc8c56f5fd96 - 200 null application/json; charset=utf-8 26.9141ms
+2025-08-24 16:01:40.593 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-08-24 16:01:40.594 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:40.594 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 204 null null 0.7407ms
+2025-08-24 16:01:40.601 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - application/json null
+2025-08-24 16:01:40.602 +03:00 [INF] CORS policy execution successful.
+2025-08-24 16:01:40.604 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-08-24 16:01:40.605 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-08-24 16:01:40.620 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__request_UserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Id] = @__request_UserId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-08-24 16:01:40.658 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[@__request_UserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id] AS [RoomMemberId], [t].[Id] AS [ChatRoomId], CASE
+    WHEN [t].[Type] = 1 THEN (
+        SELECT TOP(1) [t0].[FirstName] + N' ' + COALESCE([t0].[LastName], N'')
+        FROM [RoomMembers] AS [r0]
+        INNER JOIN (
+            SELECT [u].[Id], [u].[ActionBy], [u].[ConnectId], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[IsDeleted], [u].[LastActionDate], [u].[LastName], [u].[Metadata], [u].[Password], [u].[ProfileImageUrl], [u].[Username], [u].[WorkspaceId]
+            FROM [Users] AS [u]
+            WHERE [u].[IsDeleted] = CAST(0 AS bit)
+        ) AS [t0] ON [r0].[UserId] = [t0].[Id]
+        WHERE [r0].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = [r0].[ChatRoomId] AND [r0].[UserId] <> @__request_UserId_0)
+    ELSE [t].[Title]
+END AS [Title], CASE
+    WHEN [t].[Type] = 2 THEN [t].[Description]
+    ELSE NULL
+END AS [Description], (
+    SELECT COUNT(*)
+    FROM [RoomMembers] AS [r1]
+    WHERE [r1].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = [r1].[ChatRoomId]) AS [TotalMembers], -1 AS [TotalMessages], [t].[LastActionDate], [r].[IsAdmin]
+FROM [RoomMembers] AS [r]
+INNER JOIN (
+    SELECT [c].[Id], [c].[Description], [c].[LastActionDate], [c].[Title], [c].[Type]
+    FROM [ChatRooms] AS [c]
+    WHERE [c].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [r].[ChatRoomId] = [t].[Id]
+WHERE [r].[IsDeleted] = CAST(0 AS bit) AND [r].[UserId] = @__request_UserId_0
+ORDER BY [t].[LastActionDate] DESC
+2025-08-24 16:01:40.659 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.Collections.Generic.List`1[[Application.Queries.ChatRooms.GetChatRoomDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-24 16:01:40.660 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 55.1069ms
+2025-08-24 16:01:40.660 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-08-24 16:01:40.660 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 200 in 57.8049 ms
+2025-08-24 16:01:40.660 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 200 null application/json; charset=utf-8 59.3146ms
+2025-08-24 16:01:43.309 +03:00 [INF] Executed endpoint '/chatHub'
+2025-08-24 16:01:43.309 +03:00 [INF] HTTP CONNECT /chathub responded 200 in 10707.3549 ms
+2025-08-24 16:01:43.309 +03:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7003/chathub?id=eQFXy47KGHdzobeGgl3SZQ&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZDg4MDVkMS0zYjViLTRiOTktYjIyNi1lYzQ3MjkzYjI0ZDQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoieXpuIiwiV29ya3NwYWNlSWQiOiJkM2IzMzNiOS04OTYzLTRmMjUtOTkwYS1jYzhjNTZmNWZkOTYiLCJleHAiOjE3NTYyODc4NjksImlzcyI6IkFtYW5haENoYXQiLCJhdWQiOiJBbWFuYWhDaGF0QW5ndWxhciJ9.HF7PEBwKXFRHRWju5Z2rFY7w-MkmEMZawNOybzVIqng - 200 null null 10707.9379ms
+2025-08-24 16:01:55.721 +03:00 [INF] Application is shutting down...
