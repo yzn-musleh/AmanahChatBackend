@@ -9,8 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Application.Commands.ChatRooms.AddChatRoom
 {
     public class AddChatRoomHandler(
-        IApplicationDbContext _applicationDbContext,
-        IMapper _mapper)
+        IApplicationDbContext _applicationDbContext)
         : IRequestHandler<AddChatRoomRequest, ApiResult<Guid>>
     {
         public async Task<ApiResult<Guid>> Handle(AddChatRoomRequest request, CancellationToken cancellationToken)
@@ -20,14 +19,13 @@ namespace Application.Commands.ChatRooms.AddChatRoom
             try
             {
                 // Verify workspace exists
-                // TODO CHECK IF DELETED
                 var workspaceExists = await _applicationDbContext.Workspaces
                       .AnyAsync(w => w.Id == request.WorkspaceId, cancellationToken);
 
-                //if (!workspaceExists)
-                //{
-                //    return result.CreateError(ErrorCodeEnum.NotFound, "Workspace not found");
-                //}
+                if (!workspaceExists)
+                {
+                    return result.CreateError(ErrorCodeEnum.NotFound, "Workspace not found");
+                }
 
                 // Create the chat room
                 var chatRoom = new ChatRoom

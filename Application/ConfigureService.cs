@@ -13,6 +13,7 @@ namespace Application
 
             
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(UserContextBehavior<,>));
+            services.AddScoped<TenantContext>();
 
             return services;
         }

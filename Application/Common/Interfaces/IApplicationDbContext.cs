@@ -6,6 +6,8 @@ namespace Application.Common.Interfaces
 {
     public interface IApplicationDbContext
     {
+        DbSet<AccessKeys> AccessKeys { get; }
+        DbSet<Tenant> Tenant { get; }
         DbSet<Workspace> Workspaces { get; }
 
         DbSet<ChatMessage> ChatMessages { get; }

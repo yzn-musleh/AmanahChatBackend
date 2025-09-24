@@ -1,5 +1,6 @@
 ﻿using Application.Commands.ChatRooms.AddChatRoom;
 using Application.Commands.ChatRooms.AddRoomMember;
+using Application.Commands.Tenants.CreateTenant;
 using Application.Commands.Users.AddUser;
 using Application.Commands.Workspaces.AddWorkspace;
 using Application.Queries.ChatRooms;
@@ -40,6 +41,8 @@ namespace Application.Common
             CreateMap<User, GetUserDto>();
 
             CreateMap<Workspace, GetWorkspaceDto>();
+
+            CreateMap<CreateTenantRequest, Tenant>();
         }
     }
 }

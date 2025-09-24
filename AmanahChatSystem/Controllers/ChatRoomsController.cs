@@ -5,6 +5,7 @@ using Application.Commands.ChatRooms.RemoveRoomMember;
 using Application.Commands.ChatRooms.UpdateChatRoom;
 using Application.Queries.ChatRooms.GetChatRoomByUser;
 using Application.Queries.ChatRooms.GetChatRoomsByWorkspace;
+using ChatSystem.UI.Filters;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,6 +14,7 @@ namespace ChatSystem.UI.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
+    [ServiceFilter(typeof(ApiKeyAuthFilter))]
     public class ChatRoomsController : BaseController
     {
         public ChatRoomsController(IServiceProvider serviceProvider) 
@@ -23,7 +25,6 @@ namespace ChatSystem.UI.Controllers
         [HttpGet("GetChatRoomsByWorkspace")]
         public async Task<IActionResult> GetChatRoomsByWorkspace(CancellationToken cancellationToken = default)
         {
-
             var query = new GetChatRoomByWorkspaceQuery();
 
             var result = await _Mediator.Send(query, cancellationToken);
@@ -67,7 +68,6 @@ namespace ChatSystem.UI.Controllers
 
 
         // room members operations
-
         [HttpPost("Members")]
         public async Task<IActionResult> AddMemberAsync(
             [FromBody] AddRoomMembersRequest request,

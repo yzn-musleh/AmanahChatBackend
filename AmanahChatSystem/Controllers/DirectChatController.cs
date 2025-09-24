@@ -1,6 +1,4 @@
 ﻿using Application.Commands.ChatRooms.AddDirectChat;
-using Application.Common;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChatSystem.UI.Controllers

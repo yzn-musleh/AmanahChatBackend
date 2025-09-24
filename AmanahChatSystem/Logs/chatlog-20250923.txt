@@ -1,0 +1,900 @@
+2025-09-23 11:29:31.962 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-09-23 11:29:32.037 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-09-23 11:29:32.040 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-09-23 11:29:32.041 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-09-23 11:29:32.068 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-09-23 11:29:32.079 +03:00 [INF] Applying migration '20250923082908_migrate'.
+2025-09-23 11:29:32.659 +03:00 [INF] Executed DbCommand (535ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[AccessKeys].[HashedApiKey]', N'KeyId', N'COLUMN';
+2025-09-23 11:29:32.676 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [AccessKeys] ADD [KeyHash] nvarchar(max) NOT NULL DEFAULT N'';
+2025-09-23 11:29:32.679 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [AccessKeys] ADD [Salt] varbinary(max) NOT NULL DEFAULT 0x;
+2025-09-23 11:29:32.684 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250923082908_migrate', N'8.0.13');
+2025-09-23 11:30:22.946 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 11:30:23.307 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 11:30:23.308 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 11:30:23.310 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 11:30:23.310 +03:00 [INF] Hosting environment: Development
+2025-09-23 11:30:23.310 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 11:30:24.180 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger - null null
+2025-09-23 11:30:24.297 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger - 301 0 null 118.8196ms
+2025-09-23 11:30:24.308 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 11:30:24.358 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 50.6335ms
+2025-09-23 11:30:24.402 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/swagger-ui.css - null null
+2025-09-23 11:30:24.408 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/swagger-ui-bundle.js - null null
+2025-09-23 11:30:24.408 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-23 11:30:24.408 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 11:30:24.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.7401ms
+2025-09-23 11:30:24.434 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-09-23 11:30:24.434 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-09-23 11:30:24.434 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/swagger-ui.css - 200 143943 text/css 32.3139ms
+2025-09-23 11:30:24.434 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 26.4482ms
+2025-09-23 11:30:24.438 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-09-23 11:30:24.438 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 30.3261ms
+2025-09-23 11:30:24.442 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 11:30:24.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.3966ms
+2025-09-23 11:30:24.694 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 11:30:24.748 +03:00 [ERR] Error ID: 0HNFQFDODI431:0000000F
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Tenant" for actions - ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI),ChatSystem.UI.Controllers.TenantController.IssueApiKey (ChatSystem.UI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ChatSystem.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-23 11:30:24.770 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 400 null null 76.1821ms
+2025-09-23 11:30:58.108 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 11:30:58.246 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 11:30:58.246 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 11:30:58.249 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 11:30:58.249 +03:00 [INF] Hosting environment: Development
+2025-09-23 11:30:58.249 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 11:30:58.350 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 11:30:58.544 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 193.9239ms
+2025-09-23 11:30:58.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 11:30:58.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 11:30:58.676 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 5.2896ms
+2025-09-23 11:30:58.696 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.3488ms
+2025-09-23 11:30:58.769 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 11:30:58.787 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/favicon-32x32.png - null null
+2025-09-23 11:30:58.799 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-09-23 11:30:58.799 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/favicon-32x32.png - 200 628 image/png 12.573ms
+2025-09-23 11:30:58.846 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.5141ms
+2025-09-23 11:31:26.375 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/api/Tenant - application/json 49
+2025-09-23 11:31:26.382 +03:00 [INF] CORS policy execution failed.
+2025-09-23 11:31:26.382 +03:00 [INF] Request origin https://localhost:7003 does not have permission to access the resource.
+2025-09-23 11:31:26.430 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI)'
+2025-09-23 11:31:26.467 +03:00 [INF] Route matched with {action = "CreateTenant", controller = "Tenant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTenant(Application.Commands.Tenants.CreateTenant.CreateTenantRequest, System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.TenantController (ChatSystem.UI).
+2025-09-23 11:31:27.619 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__request_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tenant] AS [t]
+        WHERE [t].[Name] = @__request_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-09-23 11:31:27.633 +03:00 [INF] Executed action ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI) in 1161.8503ms
+2025-09-23 11:31:27.634 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI)'
+2025-09-23 11:31:27.636 +03:00 [ERR] HTTP POST /api/Tenant responded 500 in 1251.0327 ms
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateTenantRequest -> Tenant
+Application.Commands.Tenants.CreateTenant.CreateTenantRequest -> Domain.Entities.Tenant
+   at lambda_method58(Closure, Object, Tenant, ResolutionContext)
+   at Application.Commands.Tenants.CreateTenant.CreateTenantRequextHandler.MediatR.IRequestHandler<Application.Commands.Tenants.CreateTenant.CreateTenantRequest,Domain.Common.ApiResult<System.String>>.Handle(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Commands\Tenants\CreateTenant\CreateTenantRequextHandler.cs:line 23
+   at ChatSystem.UI.Controllers.TenantController.CreateTenant(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\TenantController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-09-23 11:31:27.682 +03:00 [ERR] Error ID: 0HNFQFE2MIU4B:00000001
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateTenantRequest -> Tenant
+Application.Commands.Tenants.CreateTenant.CreateTenantRequest -> Domain.Entities.Tenant
+   at lambda_method58(Closure, Object, Tenant, ResolutionContext)
+   at Application.Commands.Tenants.CreateTenant.CreateTenantRequextHandler.MediatR.IRequestHandler<Application.Commands.Tenants.CreateTenant.CreateTenantRequest,Domain.Common.ApiResult<System.String>>.Handle(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Commands\Tenants\CreateTenant\CreateTenantRequextHandler.cs:line 23
+   at ChatSystem.UI.Controllers.TenantController.CreateTenant(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\TenantController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ChatSystem.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-23 11:31:27.704 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/api/Tenant - 400 null null 1329.1591ms
+2025-09-23 11:32:59.022 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 11:32:59.109 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 11:32:59.109 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 11:32:59.111 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 11:32:59.111 +03:00 [INF] Hosting environment: Development
+2025-09-23 11:32:59.111 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 11:32:59.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 11:32:59.664 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 170.2646ms
+2025-09-23 11:32:59.687 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 11:32:59.691 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 11:32:59.696 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.9218ms
+2025-09-23 11:32:59.734 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.0681ms
+2025-09-23 11:32:59.840 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 11:32:59.931 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.0668ms
+2025-09-23 11:33:19.101 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/api/Tenant - application/json 49
+2025-09-23 11:33:19.108 +03:00 [INF] CORS policy execution failed.
+2025-09-23 11:33:19.109 +03:00 [INF] Request origin https://localhost:7003 does not have permission to access the resource.
+2025-09-23 11:33:19.147 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI)'
+2025-09-23 11:33:19.168 +03:00 [INF] Route matched with {action = "CreateTenant", controller = "Tenant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTenant(Application.Commands.Tenants.CreateTenant.CreateTenantRequest, System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.TenantController (ChatSystem.UI).
+2025-09-23 11:33:20.063 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__request_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tenant] AS [t]
+        WHERE [t].[Name] = @__request_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-09-23 11:33:20.079 +03:00 [INF] Executed action ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI) in 908.5402ms
+2025-09-23 11:33:20.080 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI)'
+2025-09-23 11:33:20.082 +03:00 [ERR] HTTP POST /api/Tenant responded 500 in 968.2069 ms
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateTenantRequest -> Tenant
+Application.Commands.Tenants.CreateTenant.CreateTenantRequest -> Domain.Entities.Tenant
+   at lambda_method58(Closure, Object, Tenant, ResolutionContext)
+   at Application.Commands.Tenants.CreateTenant.CreateTenantRequextHandler.MediatR.IRequestHandler<Application.Commands.Tenants.CreateTenant.CreateTenantRequest,Domain.Common.ApiResult<System.String>>.Handle(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Commands\Tenants\CreateTenant\CreateTenantRequextHandler.cs:line 23
+   at ChatSystem.UI.Controllers.TenantController.CreateTenant(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\TenantController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-09-23 11:33:20.089 +03:00 [ERR] Error ID: 0HNFQFF6PQCV1:00000009
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateTenantRequest -> Tenant
+Application.Commands.Tenants.CreateTenant.CreateTenantRequest -> Domain.Entities.Tenant
+   at lambda_method58(Closure, Object, Tenant, ResolutionContext)
+   at Application.Commands.Tenants.CreateTenant.CreateTenantRequextHandler.MediatR.IRequestHandler<Application.Commands.Tenants.CreateTenant.CreateTenantRequest,Domain.Common.ApiResult<System.String>>.Handle(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Commands\Tenants\CreateTenant\CreateTenantRequextHandler.cs:line 23
+   at ChatSystem.UI.Controllers.TenantController.CreateTenant(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\TenantController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ChatSystem.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-23 11:33:20.101 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/api/Tenant - 400 null null 1000.0719ms
+2025-09-23 12:01:24.631 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 12:01:25.178 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 12:01:25.178 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 12:01:25.182 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 12:01:25.183 +03:00 [INF] Hosting environment: Development
+2025-09-23 12:01:25.183 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 12:01:26.427 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 12:01:26.854 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 444.9968ms
+2025-09-23 12:01:26.967 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 12:01:26.967 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 12:01:26.979 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 12.5188ms
+2025-09-23 12:01:27.102 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 135.1139ms
+2025-09-23 12:01:27.186 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 12:01:27.391 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 205.7864ms
+2025-09-23 12:01:44.543 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/api/Tenant - application/json 49
+2025-09-23 12:01:44.551 +03:00 [INF] CORS policy execution failed.
+2025-09-23 12:01:44.551 +03:00 [INF] Request origin https://localhost:7003 does not have permission to access the resource.
+2025-09-23 12:01:44.714 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI)'
+2025-09-23 12:01:44.766 +03:00 [INF] Route matched with {action = "CreateTenant", controller = "Tenant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTenant(Application.Commands.Tenants.CreateTenant.CreateTenantRequest, System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.TenantController (ChatSystem.UI).
+2025-09-23 12:01:57.080 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__request_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tenant] AS [t]
+        WHERE [t].[Name] = @__request_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-09-23 12:06:12.719 +03:00 [INF] Executed action ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI) in 267943.7909ms
+2025-09-23 12:06:12.727 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI)'
+2025-09-23 12:06:12.739 +03:00 [ERR] HTTP POST /api/Tenant responded 500 in 268178.3482 ms
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateTenantRequest -> Tenant
+Application.Commands.Tenants.CreateTenant.CreateTenantRequest -> Domain.Entities.Tenant
+   at lambda_method58(Closure, Object, Tenant, ResolutionContext)
+   at Application.Commands.Tenants.CreateTenant.CreateTenantRequextHandler.MediatR.IRequestHandler<Application.Commands.Tenants.CreateTenant.CreateTenantRequest,Domain.Common.ApiResult<System.String>>.Handle(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Commands\Tenants\CreateTenant\CreateTenantRequextHandler.cs:line 23
+   at ChatSystem.UI.Controllers.TenantController.CreateTenant(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\TenantController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-09-23 12:06:36.515 +03:00 [ERR] Error ID: 0HNFQFV38R7UU:00000009
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateTenantRequest -> Tenant
+Application.Commands.Tenants.CreateTenant.CreateTenantRequest -> Domain.Entities.Tenant
+   at lambda_method58(Closure, Object, Tenant, ResolutionContext)
+   at Application.Commands.Tenants.CreateTenant.CreateTenantRequextHandler.MediatR.IRequestHandler<Application.Commands.Tenants.CreateTenant.CreateTenantRequest,Domain.Common.ApiResult<System.String>>.Handle(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Commands\Tenants\CreateTenant\CreateTenantRequextHandler.cs:line 23
+   at ChatSystem.UI.Controllers.TenantController.CreateTenant(CreateTenantRequest request, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\TenantController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ChatSystem.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-23 12:06:36.566 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/api/Tenant - 400 null null 292022.2037ms
+2025-09-23 12:36:16.779 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 12:36:16.909 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 12:36:16.909 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 12:36:16.911 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 12:36:16.912 +03:00 [INF] Hosting environment: Development
+2025-09-23 12:36:16.912 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 12:36:17.331 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 12:36:17.494 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 165.5864ms
+2025-09-23 12:36:17.516 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 12:36:17.520 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 12:36:17.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 12.1016ms
+2025-09-23 12:36:17.582 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.2115ms
+2025-09-23 12:36:17.881 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 12:36:17.942 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.0347ms
+2025-09-23 12:36:51.622 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/api/Tenant - application/json 49
+2025-09-23 12:36:51.630 +03:00 [INF] CORS policy execution failed.
+2025-09-23 12:36:51.630 +03:00 [INF] Request origin https://localhost:7003 does not have permission to access the resource.
+2025-09-23 12:36:51.676 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI)'
+2025-09-23 12:36:51.706 +03:00 [INF] Route matched with {action = "CreateTenant", controller = "Tenant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTenant(Application.Commands.Tenants.CreateTenant.CreateTenantRequest, System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.TenantController (ChatSystem.UI).
+2025-09-23 12:36:52.879 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__request_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tenant] AS [t]
+        WHERE [t].[Name] = @__request_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-09-23 12:36:53.138 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tenant] ([Id], [CreatedAt], [Email], [Name], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-23 12:36:53.159 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-23 12:36:53.176 +03:00 [INF] Executed action ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI) in 1466.6311ms
+2025-09-23 12:36:53.176 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.TenantController.CreateTenant (ChatSystem.UI)'
+2025-09-23 12:36:53.178 +03:00 [INF] HTTP POST /api/Tenant responded 200 in 1543.2531 ms
+2025-09-23 12:36:53.189 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/api/Tenant - 200 null application/json; charset=utf-8 1566.1139ms
+2025-09-23 12:37:51.413 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/api/Tenant/issueKey - application/json 56
+2025-09-23 12:37:51.417 +03:00 [INF] CORS policy execution failed.
+2025-09-23 12:37:51.417 +03:00 [INF] Request origin https://localhost:7003 does not have permission to access the resource.
+2025-09-23 12:37:51.423 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.TenantController.IssueApiKey (ChatSystem.UI)'
+2025-09-23 12:37:51.432 +03:00 [INF] Route matched with {action = "IssueApiKey", controller = "Tenant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IssueApiKey(Application.Commands.AccessKeys.AddAccessKey.AddAccessKeyRequest, System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.TenantController (ChatSystem.UI).
+2025-09-23 12:37:51.583 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AccessKeys] ([Id], [IsActive], [IssuedAt], [KeyHash], [KeyId], [Salt], [TenantId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-09-23 12:37:51.586 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-23 12:37:51.586 +03:00 [INF] Executed action ChatSystem.UI.Controllers.TenantController.IssueApiKey (ChatSystem.UI) in 154.4826ms
+2025-09-23 12:37:51.586 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.TenantController.IssueApiKey (ChatSystem.UI)'
+2025-09-23 12:37:51.587 +03:00 [INF] HTTP POST /api/Tenant/issueKey responded 200 in 169.0554 ms
+2025-09-23 12:37:51.587 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/api/Tenant/issueKey - 200 null application/json; charset=utf-8 173.335ms
+2025-09-23 13:53:30.115 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 13:53:30.263 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 13:53:30.263 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 13:53:30.265 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 13:53:30.265 +03:00 [INF] Hosting environment: Development
+2025-09-23 13:53:30.265 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 13:53:30.894 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 13:53:31.181 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 291.5563ms
+2025-09-23 13:53:31.235 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 13:53:31.235 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 13:53:31.240 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 5.079ms
+2025-09-23 13:53:31.290 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.8885ms
+2025-09-23 13:53:31.662 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 13:53:31.874 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 212.1016ms
+2025-09-23 13:53:40.535 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 13:53:40.571 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-23 13:53:40.574 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-23 13:53:40.576 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 401 in 33.7910 ms
+2025-09-23 13:53:40.578 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 401 0 null 43.0682ms
+2025-09-23 13:53:53.938 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 13:53:54.031 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 13:53:54.032 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 13:53:54.033 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 13:53:54.034 +03:00 [INF] Hosting environment: Development
+2025-09-23 13:53:54.034 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 13:53:54.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 13:53:54.717 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 176.3855ms
+2025-09-23 13:53:54.749 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 13:53:54.756 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 13:53:54.764 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 8.5056ms
+2025-09-23 13:53:54.809 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.001ms
+2025-09-23 13:53:54.974 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 13:53:55.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.4291ms
+2025-09-23 13:54:00.267 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 13:54:00.289 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 13:54:00.294 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 13:54:00.296 +03:00 [ERR] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 500 in 24.5967 ms
+System.InvalidOperationException: No service for type 'ChatSystem.UI.Filters.ApiKeyAuthFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ServiceFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-09-23 13:54:00.305 +03:00 [ERR] Error ID: 0HNFQHTUIEJRC:00000001
+System.InvalidOperationException: No service for type 'ChatSystem.UI.Filters.ApiKeyAuthFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ServiceFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ChatSystem.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-23 13:54:00.321 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 400 null null 53.3524ms
+2025-09-23 13:55:09.095 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 13:55:09.231 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 13:55:09.231 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 13:55:09.235 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 13:55:09.237 +03:00 [INF] Hosting environment: Development
+2025-09-23 13:55:09.237 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 13:55:09.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 13:55:09.797 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 193.2823ms
+2025-09-23 13:55:09.941 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 13:55:09.971 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 13:55:09.978 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 6.6711ms
+2025-09-23 13:55:09.978 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.2603ms
+2025-09-23 13:55:10.022 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 13:55:10.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.6436ms
+2025-09-23 13:55:13.881 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 13:55:13.899 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 13:55:13.961 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-09-23 13:55:13.963 +03:00 [INF] Authorization failed for the request at filter 'ChatSystem.UI.Filters.ApiKeyAuthFilter'.
+2025-09-23 13:55:13.965 +03:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-09-23 13:55:13.967 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 4.3365ms
+2025-09-23 13:55:13.968 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 13:55:13.969 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 401 in 82.4275 ms
+2025-09-23 13:55:13.970 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 401 null text/plain; charset=utf-8 88.4543ms
+2025-09-23 13:57:31.011 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 13:57:31.128 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 13:57:31.128 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 13:57:31.132 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 13:57:31.132 +03:00 [INF] Hosting environment: Development
+2025-09-23 13:57:31.132 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 13:57:31.453 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 13:57:31.632 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 180.0227ms
+2025-09-23 13:57:31.655 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 13:57:31.660 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 13:57:31.665 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.494ms
+2025-09-23 13:57:31.694 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.0944ms
+2025-09-23 13:57:31.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 13:57:31.883 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 104.2593ms
+2025-09-23 13:57:36.893 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 13:57:36.918 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-23 13:57:36.921 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-23 13:57:36.922 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 401 in 23.1641 ms
+2025-09-23 13:57:36.922 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 401 0 null 29.5859ms
+2025-09-23 13:57:52.360 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 13:57:52.451 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 13:57:52.451 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 13:57:52.453 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 13:57:52.453 +03:00 [INF] Hosting environment: Development
+2025-09-23 13:57:52.453 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 13:57:52.755 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 13:57:52.901 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 146.6652ms
+2025-09-23 13:57:52.944 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 13:57:52.944 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 13:57:52.947 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 2.5692ms
+2025-09-23 13:57:52.966 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.1877ms
+2025-09-23 13:57:52.995 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 13:57:53.087 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.2416ms
+2025-09-23 13:57:57.514 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 13:57:57.537 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-23 13:57:57.538 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-23 13:57:57.539 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 401 in 20.3204 ms
+2025-09-23 13:57:57.540 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 401 0 null 25.4535ms
+2025-09-23 15:01:22.442 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 15:01:22.599 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 15:01:22.599 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 15:01:22.601 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 15:01:22.602 +03:00 [INF] Hosting environment: Development
+2025-09-23 15:01:22.602 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 15:01:23.036 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 15:01:23.183 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 149.7336ms
+2025-09-23 15:01:23.207 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 15:01:23.207 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 15:01:23.213 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 5.5691ms
+2025-09-23 15:01:23.243 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.269ms
+2025-09-23 15:01:23.582 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 15:01:23.669 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 86.9368ms
+2025-09-23 15:01:28.525 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 15:01:28.593 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-23 15:01:28.599 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-23 15:01:28.603 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 401 in 60.5254 ms
+2025-09-23 15:01:28.605 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 401 0 null 80.1445ms
+2025-09-23 15:04:36.559 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/api/Tenant/issueKey - application/json 56
+2025-09-23 15:04:36.568 +03:00 [INF] CORS policy execution failed.
+2025-09-23 15:04:36.568 +03:00 [INF] Request origin https://localhost:7003 does not have permission to access the resource.
+2025-09-23 15:04:36.572 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.TenantController.IssueApiKey (ChatSystem.UI)'
+2025-09-23 15:04:36.592 +03:00 [INF] Route matched with {action = "IssueApiKey", controller = "Tenant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IssueApiKey(Application.Commands.AccessKeys.AddAccessKey.AddAccessKeyRequest, System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.TenantController (ChatSystem.UI).
+2025-09-23 15:04:37.267 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AccessKeys] ([Id], [IsActive], [IssuedAt], [KeyHash], [KeyId], [Salt], [TenantId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-09-23 15:04:37.277 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-23 15:04:37.289 +03:00 [INF] Executed action ChatSystem.UI.Controllers.TenantController.IssueApiKey (ChatSystem.UI) in 694.6587ms
+2025-09-23 15:04:37.289 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.TenantController.IssueApiKey (ChatSystem.UI)'
+2025-09-23 15:04:37.289 +03:00 [INF] HTTP POST /api/Tenant/issueKey responded 200 in 720.4842 ms
+2025-09-23 15:04:37.294 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/api/Tenant/issueKey - 200 null application/json; charset=utf-8 734.9291ms
+2025-09-23 15:04:57.877 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 15:04:57.880 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-23 15:04:57.880 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-23 15:04:57.880 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 401 in 1.5900 ms
+2025-09-23 15:04:57.882 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 401 0 null 4.6641ms
+2025-09-23 15:05:18.850 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 15:05:18.862 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2025-09-23 15:05:18.872 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-09-23 15:05:18.874 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-23 15:05:18.875 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-23 15:05:18.875 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 401 in 24.6265 ms
+2025-09-23 15:05:18.875 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 401 0 null 25.1296ms
+2025-09-23 15:05:38.141 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/api/Users/Login - application/json 44
+2025-09-23 15:05:38.141 +03:00 [INF] CORS policy execution failed.
+2025-09-23 15:05:38.142 +03:00 [INF] Request origin https://localhost:7003 does not have permission to access the resource.
+2025-09-23 15:05:38.142 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.UsersController.Login (ChatSystem.UI)'
+2025-09-23 15:05:38.148 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.Commands.Users.LoginUser.LoginUserRequest, System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.UsersController (ChatSystem.UI).
+2025-09-23 15:05:38.359 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__request_UserName_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[ActionBy], [u].[ConnectId], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[IsDeleted], [u].[LastActionDate], [u].[LastName], [u].[Metadata], [u].[Password], [u].[ProfileImageUrl], [u].[Username], [u].[WorkspaceId]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Username] = @__request_UserName_0 AND [u].[Password] = @__request_Password_1
+2025-09-23 15:05:38.367 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Domain.Common.ApiResult`1[[Application.Commands.Users.LoginUser.GetLoggedUserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-23 15:05:38.368 +03:00 [INF] Executed action ChatSystem.UI.Controllers.UsersController.Login (ChatSystem.UI) in 220.034ms
+2025-09-23 15:05:38.369 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.UsersController.Login (ChatSystem.UI)'
+2025-09-23 15:05:38.369 +03:00 [INF] HTTP POST /api/Users/Login responded 400 in 227.1276 ms
+2025-09-23 15:05:38.369 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/api/Users/Login - 400 null application/json; charset=utf-8 228.4088ms
+2025-09-23 15:05:53.691 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7003/api/Users/Login - application/json 44
+2025-09-23 15:05:53.692 +03:00 [INF] CORS policy execution failed.
+2025-09-23 15:05:53.692 +03:00 [INF] Request origin https://localhost:7003 does not have permission to access the resource.
+2025-09-23 15:05:53.693 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.UsersController.Login (ChatSystem.UI)'
+2025-09-23 15:05:53.693 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.Commands.Users.LoginUser.LoginUserRequest, System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.UsersController (ChatSystem.UI).
+2025-09-23 15:05:53.712 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request_UserName_0='?' (Size = 4000), @__request_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[ActionBy], [u].[ConnectId], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[IsDeleted], [u].[LastActionDate], [u].[LastName], [u].[Metadata], [u].[Password], [u].[ProfileImageUrl], [u].[Username], [u].[WorkspaceId]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Username] = @__request_UserName_0 AND [u].[Password] = @__request_Password_1
+2025-09-23 15:05:53.712 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Domain.Common.ApiResult`1[[Application.Commands.Users.LoginUser.GetLoggedUserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-23 15:05:53.712 +03:00 [INF] Executed action ChatSystem.UI.Controllers.UsersController.Login (ChatSystem.UI) in 19.5598ms
+2025-09-23 15:05:53.712 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.UsersController.Login (ChatSystem.UI)'
+2025-09-23 15:05:53.713 +03:00 [INF] HTTP POST /api/Users/Login responded 400 in 19.9858 ms
+2025-09-23 15:05:53.713 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7003/api/Users/Login - 400 null application/json; charset=utf-8 22.1039ms
+2025-09-23 15:06:37.610 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 15:06:38.015 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 15:06:38.015 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 15:06:38.017 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 15:06:38.018 +03:00 [INF] Hosting environment: Development
+2025-09-23 15:06:38.018 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 15:06:38.440 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 15:06:38.623 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 185.9988ms
+2025-09-23 15:06:38.840 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 15:06:38.840 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 15:06:38.842 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 2.3141ms
+2025-09-23 15:06:38.858 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.402ms
+2025-09-23 15:06:39.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 15:06:39.190 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 163.0456ms
+2025-09-23 15:06:50.224 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser?X-Api-Key=DLRvsrghCfA=.bCokQ2+BjI/OXn8wDoqdYkg+pSBCzJ6gBQuCbzV8LCw= - null null
+2025-09-23 15:06:50.275 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:06:50.464 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-09-23 15:06:50.468 +03:00 [INF] Authorization failed for the request at filter 'ChatSystem.UI.Filters.ApiKeyAuthFilter'.
+2025-09-23 15:06:50.477 +03:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-09-23 15:06:50.487 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 14.6949ms
+2025-09-23 15:06:50.487 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:06:50.492 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 401 in 256.2781 ms
+2025-09-23 15:06:50.497 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser?X-Api-Key=DLRvsrghCfA=.bCokQ2+BjI/OXn8wDoqdYkg+pSBCzJ6gBQuCbzV8LCw= - 401 null text/plain; charset=utf-8 272.7234ms
+2025-09-23 15:06:58.800 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 15:06:58.807 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:06:58.820 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-09-23 15:07:00.530 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[@__keyId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[IsActive], [a].[IssuedAt], [a].[KeyHash], [a].[KeyId], [a].[Salt], [a].[TenantId], [t].[Id], [t].[CreatedAt], [t].[Email], [t].[Name], [t].[UpdatedAt]
+FROM [AccessKeys] AS [a]
+INNER JOIN [Tenant] AS [t] ON [a].[TenantId] = [t].[Id]
+WHERE [a].[KeyId] = @__keyId_0 AND [a].[IsActive] = CAST(1 AS bit)
+2025-09-23 15:07:00.726 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 1905.5284ms
+2025-09-23 15:07:00.727 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:07:00.728 +03:00 [ERR] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 500 in 1923.4715 ms
+System.UnauthorizedAccessException: User not authenticated
+   at Application.Common.UserContextBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Common\UserContextBehaviour.cs:line 32
+   at ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser(CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\ChatRoomsController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-09-23 15:07:00.785 +03:00 [ERR] Error ID: 0HNFQJ6J4PT2T:00000002
+System.UnauthorizedAccessException: User not authenticated
+   at Application.Common.UserContextBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Common\UserContextBehaviour.cs:line 32
+   at ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser(CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\ChatRoomsController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ChatSystem.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-23 15:07:00.797 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 400 null null 1997.078ms
+2025-09-23 15:07:12.550 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 15:07:12.553 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:07:12.560 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-09-23 15:07:12.650 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__keyId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[IsActive], [a].[IssuedAt], [a].[KeyHash], [a].[KeyId], [a].[Salt], [a].[TenantId], [t].[Id], [t].[CreatedAt], [t].[Email], [t].[Name], [t].[UpdatedAt]
+FROM [AccessKeys] AS [a]
+INNER JOIN [Tenant] AS [t] ON [a].[TenantId] = [t].[Id]
+WHERE [a].[KeyId] = @__keyId_0 AND [a].[IsActive] = CAST(1 AS bit)
+2025-09-23 15:07:12.683 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 123.2248ms
+2025-09-23 15:07:12.684 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:07:12.684 +03:00 [ERR] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 500 in 134.1358 ms
+System.UnauthorizedAccessException: User not authenticated
+   at Application.Common.UserContextBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Common\UserContextBehaviour.cs:line 32
+   at ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser(CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\ChatRoomsController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-09-23 15:07:12.686 +03:00 [ERR] Error ID: 0HNFQJ6J4PT2T:00000003
+System.UnauthorizedAccessException: User not authenticated
+   at Application.Common.UserContextBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Common\UserContextBehaviour.cs:line 32
+   at ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser(CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\ChatRoomsController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ChatSystem.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-23 15:07:12.688 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 400 null null 138.673ms
+2025-09-23 15:07:17.840 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 15:07:17.840 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:07:17.841 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-09-23 15:07:17.866 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__keyId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[IsActive], [a].[IssuedAt], [a].[KeyHash], [a].[KeyId], [a].[Salt], [a].[TenantId], [t].[Id], [t].[CreatedAt], [t].[Email], [t].[Name], [t].[UpdatedAt]
+FROM [AccessKeys] AS [a]
+INNER JOIN [Tenant] AS [t] ON [a].[TenantId] = [t].[Id]
+WHERE [a].[KeyId] = @__keyId_0 AND [a].[IsActive] = CAST(1 AS bit)
+2025-09-23 15:07:17.885 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 43.6788ms
+2025-09-23 15:07:17.885 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:07:17.885 +03:00 [ERR] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 500 in 45.1647 ms
+System.UnauthorizedAccessException: User not authenticated
+   at Application.Common.UserContextBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Common\UserContextBehaviour.cs:line 32
+   at ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser(CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\ChatRoomsController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-09-23 15:07:17.887 +03:00 [ERR] Error ID: 0HNFQJ6J4PT2T:00000004
+System.UnauthorizedAccessException: User not authenticated
+   at Application.Common.UserContextBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Common\UserContextBehaviour.cs:line 32
+   at ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser(CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\ChatRoomsController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ChatSystem.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-23 15:07:17.888 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 400 null null 48.5506ms
+2025-09-23 15:13:37.516 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 15:13:37.920 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 15:13:37.921 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 15:13:37.926 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 15:13:37.929 +03:00 [INF] Hosting environment: Development
+2025-09-23 15:13:37.929 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 15:13:38.712 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 15:13:39.206 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 514.9719ms
+2025-09-23 15:13:39.225 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 15:13:39.243 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 18.4973ms
+2025-09-23 15:13:39.245 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 15:13:39.370 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 125.3986ms
+2025-09-23 15:13:39.496 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 15:13:39.797 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 301.4892ms
+2025-09-23 15:13:44.045 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 15:13:44.262 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:13:44.828 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-09-23 15:13:47.340 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__keyId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[IsActive], [a].[IssuedAt], [a].[KeyHash], [a].[KeyId], [a].[Salt], [a].[TenantId], [t].[Id], [t].[CreatedAt], [t].[Email], [t].[Name], [t].[UpdatedAt]
+FROM [AccessKeys] AS [a]
+INNER JOIN [Tenant] AS [t] ON [a].[TenantId] = [t].[Id]
+WHERE [a].[KeyId] = @__keyId_0 AND [a].[IsActive] = CAST(1 AS bit)
+2025-09-23 15:13:47.923 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 3089.3214ms
+2025-09-23 15:13:47.925 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:13:47.928 +03:00 [ERR] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 500 in 3864.8982 ms
+System.UnauthorizedAccessException: User not authenticated
+   at Application.Common.UserContextBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Common\UserContextBehaviour.cs:line 32
+   at ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser(CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\ChatRoomsController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-09-23 15:13:47.988 +03:00 [ERR] Error ID: 0HNFQJAG65OJI:00000001
+System.UnauthorizedAccessException: User not authenticated
+   at Application.Common.UserContextBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Common\UserContextBehaviour.cs:line 32
+   at ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser(CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\ChatRoomsController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ChatSystem.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-23 15:13:48.013 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 400 null null 3968.6702ms
+2025-09-23 15:13:59.832 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 15:13:59.836 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:13:59.838 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-09-23 15:13:59.897 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__keyId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[IsActive], [a].[IssuedAt], [a].[KeyHash], [a].[KeyId], [a].[Salt], [a].[TenantId], [t].[Id], [t].[CreatedAt], [t].[Email], [t].[Name], [t].[UpdatedAt]
+FROM [AccessKeys] AS [a]
+INNER JOIN [Tenant] AS [t] ON [a].[TenantId] = [t].[Id]
+WHERE [a].[KeyId] = @__keyId_0 AND [a].[IsActive] = CAST(1 AS bit)
+2025-09-23 15:13:59.979 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 140.7303ms
+2025-09-23 15:13:59.980 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:13:59.980 +03:00 [ERR] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 500 in 145.2965 ms
+System.UnauthorizedAccessException: User not authenticated
+   at Application.Common.UserContextBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Common\UserContextBehaviour.cs:line 32
+   at ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser(CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\ChatRoomsController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-09-23 15:14:00.006 +03:00 [ERR] Error ID: 0HNFQJAG65OJI:00000002
+System.UnauthorizedAccessException: User not authenticated
+   at Application.Common.UserContextBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\Application\Common\UserContextBehaviour.cs:line 32
+   at ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser(CancellationToken cancellationToken) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Controllers\ChatRoomsController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ChatSystem.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-23 15:17:27.022 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 15:17:27.215 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 15:17:27.215 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 15:17:27.217 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 15:17:27.217 +03:00 [INF] Hosting environment: Development
+2025-09-23 15:17:27.217 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 15:17:27.762 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 15:17:28.113 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 368.8485ms
+2025-09-23 15:17:28.124 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 15:17:28.124 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 15:17:28.136 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 12.0789ms
+2025-09-23 15:17:28.189 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.4814ms
+2025-09-23 15:17:28.258 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 15:17:28.344 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 86.0152ms
+2025-09-23 15:17:32.563 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - null null
+2025-09-23 15:17:32.756 +03:00 [INF] Executing endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:17:32.984 +03:00 [INF] Route matched with {action = "GetChatRoomsByUser", controller = "ChatRooms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatRoomsByUser(System.Threading.CancellationToken) on controller ChatSystem.UI.Controllers.ChatRoomsController (ChatSystem.UI).
+2025-09-23 15:17:34.703 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__keyId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[IsActive], [a].[IssuedAt], [a].[KeyHash], [a].[KeyId], [a].[Salt], [a].[TenantId], [t].[Id], [t].[CreatedAt], [t].[Email], [t].[Name], [t].[UpdatedAt]
+FROM [AccessKeys] AS [a]
+INNER JOIN [Tenant] AS [t] ON [a].[TenantId] = [t].[Id]
+WHERE [a].[KeyId] = @__keyId_0 AND [a].[IsActive] = CAST(1 AS bit)
+2025-09-23 15:17:34.941 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[@__request_UserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[Id] = @__request_UserId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-09-23 15:17:34.974 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Domain.Common.ApiResult`1[[System.Collections.Generic.List`1[[Application.Queries.ChatRooms.GetChatRoomDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-23 15:17:35.008 +03:00 [INF] Executed action ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI) in 2018.7273ms
+2025-09-23 15:17:35.009 +03:00 [INF] Executed endpoint 'ChatSystem.UI.Controllers.ChatRoomsController.GetChatRoomsByUser (ChatSystem.UI)'
+2025-09-23 15:17:35.012 +03:00 [INF] HTTP GET /api/ChatRooms/GetChatRoomsByUser responded 400 in 2442.2167 ms
+2025-09-23 15:17:35.022 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7003/api/ChatRooms/GetChatRoomsByUser - 400 null application/json; charset=utf-8 2459.964ms
+2025-09-23 16:36:43.683 +03:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-23 16:36:43.802 +03:00 [INF] Now listening on: https://localhost:7003
+2025-09-23 16:36:43.802 +03:00 [INF] Now listening on: http://localhost:5277
+2025-09-23 16:36:43.803 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-23 16:36:43.804 +03:00 [INF] Hosting environment: Development
+2025-09-23 16:36:43.804 +03:00 [INF] Content root path: C:\Users\hp\Projects\Dotnet projects\AmanahChatBackend\AmanahChatSystem
+2025-09-23 16:36:44.213 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/index.html - null null
+2025-09-23 16:36:44.416 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/index.html - 200 null text/html;charset=utf-8 205.1009ms
+2025-09-23 16:36:44.457 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-23 16:36:44.460 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/_vs/browserLink - null null
+2025-09-23 16:36:44.463 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 5.9198ms
+2025-09-23 16:36:44.519 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.5294ms
+2025-09-23 16:36:44.707 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - null null
+2025-09-23 16:36:44.799 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7003/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.1201ms

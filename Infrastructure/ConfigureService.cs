@@ -77,6 +77,7 @@ namespace Infrastructure
 
             services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
             services.AddSingleton<IJwtWebTokenGenerator, JwtTokenGenerator>();
+            services.AddScoped<IApikeyService, ApiKeyService>();
 
             services.AddHttpClient();
             return services;

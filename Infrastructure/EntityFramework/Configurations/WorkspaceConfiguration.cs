@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
+using System.Reflection.Emit;
 
 namespace Infrastructure.EntityFramework.Configurations
 {
@@ -11,6 +12,12 @@ namespace Infrastructure.EntityFramework.Configurations
             configuration
                 .Property(o => o.Id)
                 .HasDefaultValueSql("NEWSEQUENTIALID()");
+
+           configuration
+                .HasOne(w => w.Tenant)
+                .WithMany(t => t.Workspaces)
+                .HasForeignKey(w => w.TenantId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             //configuration
             //      .OwnsOne(x => x.Metadata, builder => { builder.ToJson(); });

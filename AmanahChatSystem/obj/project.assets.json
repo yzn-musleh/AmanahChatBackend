@@ -5850,11 +5850,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\ChatSystem.UI.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Projects\\Dotnet projects\\AmanahChatBackend\\AmanahChatSystem\\ChatSystem.UI.csproj",
       "projectName": "ChatSystem.UI",
-      "projectPath": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\ChatSystem.UI.csproj",
+      "projectPath": "C:\\Users\\hp\\Projects\\Dotnet projects\\AmanahChatBackend\\AmanahChatSystem\\ChatSystem.UI.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Projects\\Dotnet projects\\AmanahChatBackend\\AmanahChatSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5871,14 +5871,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Application.csproj"
+            "C:\\Users\\hp\\Projects\\Dotnet projects\\AmanahChatBackend\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\hp\\Projects\\Dotnet projects\\AmanahChatBackend\\Application\\Application.csproj"
             },
-            "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Domain\\Domain.csproj"
+            "C:\\Users\\hp\\Projects\\Dotnet projects\\AmanahChatBackend\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\hp\\Projects\\Dotnet projects\\AmanahChatBackend\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\hp\\Projects\\Dotnet projects\\AmanahChatBackend\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\hp\\Projects\\Dotnet projects\\AmanahChatBackend\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

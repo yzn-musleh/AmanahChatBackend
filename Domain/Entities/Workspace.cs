@@ -7,7 +7,10 @@ namespace Domain.Entities
     public class Workspace : BaseEntity
     {
         public string Name { get; set; } = null!;
-
         public string Email { get; set; } = null!;
+
+        // Relationship
+        public Guid TenantId { get; set; }
+        public Tenant Tenant { get; set; }
     }
 }

@@ -21,6 +21,8 @@ namespace Infrastructure.EntityFramework
             _userContextService = userContextService;
         }
 
+        public DbSet<Tenant> Tenant => Set<Tenant>();
+        public DbSet<AccessKeys> AccessKeys => Set<AccessKeys>();
 
         public DbSet<Workspace> Workspaces => Set<Workspace>();
 
@@ -34,10 +36,17 @@ namespace Infrastructure.EntityFramework
 
         public DbSet<User> Users => Set<User>();
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             AddSeedData(modelBuilder);
+
+            modelBuilder.Entity<AccessKeys>()
+                .HasOne(a => a.Tenant)
+                .WithMany(t => t.AccessKeys)
+                .HasForeignKey(a => a.TenantId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.ApplyGlobalIsDeletedFilter();
             base.OnModelCreating(modelBuilder);
@@ -67,6 +76,7 @@ namespace Infrastructure.EntityFramework
 
             return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         }
+
         private static void AddSeedData(ModelBuilder modelBuilder)
         {
         }

@@ -6,8 +6,8 @@ using Serilog;
 using Infrastructure;
 using Application;
 using ChatSystem.UI;
-using static System.Net.WebRequestMethods;
 using Infrastructure.Common;
+using ChatSystem.UI.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +23,8 @@ builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddUIServices(builder.Configuration);
 
-
+builder.Services.AddScoped<TenantContext>();
+builder.Services.AddScoped<ApiKeyAuthFilter>();
 
 builder.Host.UseSerilog((context, configuration) =>
     configuration.ReadFrom.Configuration(context.Configuration));
@@ -41,7 +42,7 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(policy =>
     {
         policy
-            .WithOrigins("http://localhost:4200", "http://localhost:51331")
+            .WithOrigins("http://localhost:4200")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials(); 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l2nOlYe+SshBNxGpGGFHHq1io/ekx65RlCKhl87msxmQK3IXNfJUNywUkpihpp6V4HEmLTBl6UVPU7ZRNggNbw==",
+  "dgSpecHash": "CXMstAsSmu4MuFeNwpT0JSEhiS0n/ukKc8QzO4uure80P0dhyjrRHvfMu4saags0uQr/taH+zwasnZZjIwSNOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\hp\\Projects\\Dotnet projects\\AmanahChatBackend\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",

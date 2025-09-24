@@ -43,6 +43,7 @@ namespace ChatSystem.UI.Controllers
             var result = await _Mediator.Send(request, cancellationToken);
             return CreateResponseResult(result);
         }
+
         /// <summary>
         /// Get messages from a chat room with pagination
         /// </summary>

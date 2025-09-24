@@ -29,7 +29,7 @@ namespace Application.Common
             }
             else
             {
-                throw new UnauthorizedAccessException("User not authenticated");
+              //  throw new UnauthorizedAccessException("User not authenticated");
             }
 
             return await next();

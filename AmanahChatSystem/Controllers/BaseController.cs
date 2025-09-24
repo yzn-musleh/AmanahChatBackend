@@ -1,10 +1,7 @@
 ﻿using Domain.Common;
-using Domain.Common.DTO;
 using Domain.Enums;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
 
 namespace ChatSystem.UI.Controllers
 {

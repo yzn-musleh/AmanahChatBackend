@@ -23,4 +23,8 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Commands\AccessKeys\DisableAccessKey\" />
+  </ItemGroup>
+
 </Project>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dQDS9jfKgmkH7Zfx2w7APq3yz4egQLYmXmfemMSVG54ISZmQt/wwAaIUZu79ywjHmfciIc0kGEiOjCviCCiBOA==",
+  "dgSpecHash": "hOrIVteRMKI4D8PfNos9hKT/Z7M07cGgs8JE1rBvFuQ16gG5H9rAjTZo6hNXzZthrJTSZarK6FlUsxmI/86p1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Downloads\\AmanahChatSystem_Updated\\AmanahChatSystem\\ChatSystem.UI.csproj",
+  "projectFilePath": "C:\\Users\\hp\\Projects\\Dotnet projects\\AmanahChatBackend\\AmanahChatSystem\\ChatSystem.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
